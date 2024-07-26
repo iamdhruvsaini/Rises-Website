@@ -60,6 +60,9 @@ nav ul{
   font-size: 2vw;
   padding-right: 0.4vw;
 }
+.fa-bars{
+  display: none;
+}
 
 main{
   
@@ -90,7 +93,7 @@ main > div:nth-child(1){
 .consultation{
   font-family: "Familjen Grotesk", sans-serif;
   position: absolute;
-  top:16vw;
+  top:34vh;
   width:22vw;
   padding:0.6vw 0; 
   outline: none;
@@ -230,11 +233,12 @@ main > div:nth-child(1){
 
 .blue-page{
   background-color: blue;
+  padding-bottom: 10vh;
 }
 
 .service-head{
   padding-top: 37vh;
-  padding-left: 30vh;
+  padding-left: 15vw;
 
 }
 .service-head p:nth-child(1){
@@ -246,11 +250,13 @@ main > div:nth-child(1){
 
 .office{
   position: absolute;
-  bottom:-30vh;
-  right:8vw;
-  width:50vw;
-  overflow: hidden;
-  border-radius: 24px;
+  right:10vw;
+  background-image: url(./Assets/PNGS/office.webp);
+  background-size: cover;
+  background-position: center center;
+  width:46vw;
+  height:60vh;
+  border-radius: 18px;
 }
 
 .service-head p:nth-child(2){
@@ -282,11 +288,9 @@ main > div:nth-child(1){
   color:blue;
 }
 .card-box{
-
   width:70vw;
   margin:0 auto;
   margin-top: 10vh;
-  padding-bottom: 20vh;
   display: grid;
   grid-template-columns:1fr 1fr;
   grid-row: 1fr 1fr;
@@ -322,4 +326,381 @@ main > div:nth-child(1){
   font-size: 1.5vw;
   color: #F8EAF2;
   width:30vw;
+}
+
+
+
+@media (min-width:600px) and (max-width:850px){
+  .nav-links p{
+    font-size: 1.8vw;
+  }
+  main{
+    height:74vh;
+  }
+  main > div:nth-child(1){
+    height:100%;
+    width:50vw;
+   
+  }
+  .consultation{
+    top:26vh;
+    width:24vw;
+    padding:1.2vw 0;
+    font-size: 2vw;
+  }
+  .back-pattern{
+    width:50vw;
+    object-fit: fill;
+  }
+  .play-card-box div>p:nth-child(1){
+    font-size: 2.4vw;
+  }
+  .play-card-box div>p:nth-child(2){
+    font-size: 1.5vw;
+  }
+  .play-card-box{
+    bottom:-3vh;
+  }
+  .journey{
+    margin-top: 8vh;
+  }
+  .office{
+    bottom:-32vh;
+    right:5vw;
+    width:60vw;
+  }
+  .service-head p:nth-child(1){
+    font-size: 9vw;
+  }
+  .service-head p:nth-child(2){
+    font-size: 2vw;
+    line-height: 2.1vw;
+    width:44vw;
+    text-align: justify;
+    
+  }
+  .service-head > .book{
+    width:24vw;
+    font-size: 2.4vw;
+    padding:1.2vw 0;
+    font-weight: 500;
+  }
+  .journey-points p:nth-child(1){
+    font-size: 9vw;
+  }
+  .journey-points p:nth-child(2){
+    font-size: 2.4vw;
+    width:70vw;
+  }
+  .journey-points p:nth-child(3){
+    font-size: 2vw;
+    width:56vw;
+    padding-bottom: 10vh;
+  }
+  .abt{
+    width:22vw;
+    padding:1vw 0;
+    font-size: 2.4vw;
+    font-weight: 500;
+  }
+  .card-box > div> div>img{
+    height:6.4vh;
+  }
+  .card-box > div> div:nth-child(2)>p{
+    font-size: 3vw;
+  }
+  .card-box > div> div:nth-child(3)>p{
+    font-size: 2vw;
+    line-height: 2.2vw;
+  }
+}
+
+@media (min-width:600px) and (max-width:700px){
+  main{
+    height:60vh;
+  }
+  .consultation{
+    top:22vh;
+    width:24vw;
+    padding:1.2vw 0;
+    font-size: 2.1vw;
+  }
+  .play-card-box{
+    bottom:-3vh;
+  }
+  .play-card-box div>p:nth-child(1){
+    font-size: 2.4vw;
+  }
+  .play-card-box div>p:nth-child(2){
+    font-size: 1.5vw;
+  }
+
+}
+
+
+@media (max-width:599px){
+
+  .logo img{
+    height:8vh;
+  } 
+  .fa-solid{
+    font-size: 3vw;
+  }
+  .nav-logo p{
+    font-size: 4vw;
+    font-weight: 700;
+  }
+  .nav-links{
+    width:80%;
+  }
+  .nav-links p{
+    font-size: 2.6vw;
+    font-weight: 600;
+  }
+  main{
+    position: relative;
+    height:76vh;
+  }
+  main > div:nth-child(1){
+    display: none;
+  }
+  .consultation{
+    position: absolute;
+    top:24vh;
+    left:26vw;
+    width:40vw;
+    font-size: 3.4vw;
+    padding:2vw 0;
+    font-weight: 600;
+  }
+  .heading{
+    width:100%;
+    position: none;
+  }
+  .heading p{
+    text-align: center;
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  .play-card-box{
+    position: absolute;
+    bottom:-8vh ;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .play-card-box div{
+    width:auto;
+    background-color: rgb(238, 240, 250);
+  }
+  .play-card-box div p:nth-child(1){
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .play-card-box div p:nth-child(2){
+    font-size: 2.8vw;
+    font-weight: 400;
+    padding-bottom: 2vh;
+  }
+  .play-card-box div button{
+    font-size: 3.8vw;
+  }
+
+ .journey{
+    height:100vh;
+ }
+ .journey-points{
+  padding-top: 20vh;
+  padding-left: 0;
+ }
+
+ .journey-points p:nth-child(1){
+  text-align: center;
+    font-size: 10vw;
+    padding-bottom: 6vh;
+ }
+ .journey-points p:nth-child(2){
+  width:100%;
+  text-align: center;
+  font-size: 3.4vw;
+
+ }
+ .journey-points p:nth-child(3){
+  margin:0 auto;
+  width:80%;
+  font-size: 2.8vw;
+  text-align: center;
+  padding-bottom: 8vh;
+ }
+ .abt{
+  margin-left: 35%;
+  font-size: 3vw;
+  width:25vw
+ }
+ .office{
+  bottom:-34vw;
+  left:5vw;
+  width:90%;
+  height: 56vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .service-head{
+  padding-top: 46vh;
+  padding-left: 0;
+  
+ }
+ .service-head > p:nth-child(1){
+    text-align: center;
+    font-size: 10vw;
+ }
+ .service-head > p:nth-child(2){
+  text-align: center;
+  width: 100%;
+  font-size: 3vw;
+  line-height: 3.4vw;
+ }
+ .service-head > .book{
+    margin-left:40vw;
+    font-size: 3.4vw;
+    font-weight: 500;
+    width:24vw;
+    padding:1.6vw 0;
+ }
+
+ .card-box{
+  width:80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:7vh;
+ }
+ .card-box > div> div>img{
+  height:10vh;
+ }
+ .card-box > div{
+  width:auto;
+  padding:2vw;
+  height:50vh;
+ }
+ .card-box > div> div:nth-child(2)>p{
+  font-size: 6vw;
+  text-align: center;
+
+ }
+ .card-box > div> div:nth-child(3)>p{
+  margin:0 auto;
+  width: 70%;
+  font-size: 3vw;
+  text-align: center;
+ }
+}
+
+@media (max-width:500px){
+
+  main{
+    height: 120vh;
+  }
+  .logo img{
+    height:8vh;
+  }
+  .nav-logo p{
+    font-size: 8vw;
+  }
+  .nav-links >p{
+    display: none;
+  }
+  .nav-links > .fa-bars{
+    font-size: 7vw;
+    display: block;
+
+  }
+  .heading{
+    top:5vw;
+  }
+  .heading p{
+    font-size: 9vw;
+    line-height: 10vw;
+  }
+  .consultation{
+    top:26vh;
+    width:50vw;
+    font-size: 4vw;
+    left:20vw;
+  }
+  .play-card-box{
+    flex-direction: column;
+    align-items: center;
+    gap:4vh; 
+  }
+  .play-card-box div{
+    height:38vh;
+  }
+  .play-card-box div p:nth-child(1){
+    font-size: 6vw;
+    padding-bottom: 2vh;
+  }
+  .play-card-box div p:nth-child(2){
+    font-size: 4vw;
+    padding-bottom: 5vh;
+
+  }
+  .play-card-box > div:hover{
+    transform: translateY(-2vh);
+  }
+  .journey-points{
+    padding-top: 14vh;
+  }
+  .play-card-box div button{
+    padding: 1.4vw 2vw;
+    font-size: 4vw;
+  }
+  .journey-points p:nth-child(1){
+    font-size: 11vw;
+
+  }
+  .journey-points p:nth-child(2){
+    font-size: 3vw;
+  }
+  .journey-points p:nth-child(3){
+    font-size: 3vw;
+  }
+  .back-pattern{
+    height:60vh;
+  }
+  .abt{
+    padding:1.6vw 0; 
+    width:30vw;
+    font-size: 4vw;
+  }
+  .service-head{
+    padding-top: 36vh;
+    padding-bottom: 3vh;
+  }
+  .service-head >.book{
+    width:30vw;
+    position: absolute;
+    left:-6vw;
+    font-size: 4vw;
+  }
+
+  .service-head p:nth-child(1){
+   
+    font-size: 14vw;
+  }
+  .service-head p:nth-child(2){
+    padding-top: 4vh;
+    font-size: 3vw;
+    line-height: 3.3vw;
+  }
+  .card-box > div> div:nth-child(2)>p{
+
+    font-size: 7.4vw;
+  }
+  .card-box > div> div:nth-child(3)>p{
+    font-size: 4vw;
+    width:90%;
+    
+  }
+  
 }
